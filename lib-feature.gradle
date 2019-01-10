@@ -1,0 +1,15 @@
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
+    implementation libraries.androidSupport
+    implementation libraries.constraintLayout
+
+    testImplementation libraries.jUnit
+
+    androidTestImplementation libraries.espressoRunner
+    androidTestImplementation libraries.espressoCore
+
+    implementation libraries.koin
+}

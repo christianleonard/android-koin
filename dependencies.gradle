@@ -1,0 +1,29 @@
+ext.versions = [
+        projects : [
+                compileSdkVersion: 28,
+                minSdkVersion    : 15,
+                targetSdkVersion : 28,
+                versionCode      : 1,
+                versionName      : "1.0"
+
+        ],
+        libraries: [
+                androidSupport  : "28.0.0",
+                constraintLayout: "1.1.3",
+                jUnit           : "4.12",
+                espressoRunner  : "1.0.2",
+                espressoCore    : "3.0.2",
+                koin            : "1.0.2",
+                koinJava        : "1.0.2"
+        ]
+]
+
+ext.libraries = [
+        androidSupport  : "com.android.support:appcompat-v7:$versions.libraries.androidSupport",
+        constraintLayout: "com.android.support.constraint:constraint-layout:$versions.libraries.constraintLayout",
+        jUnit           : "junit:junit:$versions.libraries.jUnit",
+        espressoRunner  : "com.android.support.test:runner:$versions.libraries.espressoRunner",
+        espressoCore    : "com.android.support.test.espresso:espresso-core:$versions.libraries.espressoCore",
+        koin            : "org.koin:koin-android:$versions.libraries.koin",
+        koinJava        : "org.koin:koin-java:$versions.libraries.koinJava"
+]

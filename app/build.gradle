@@ -1,0 +1,19 @@
+apply plugin: 'com.android.application'
+
+apply from: '../kotlin.gradle'
+apply from: '../default-module.gradle'
+apply from: '../lib-feature.gradle'
+
+android {
+    defaultConfig {
+        applicationId "com.chrizzz35.koin.android"
+    }
+}
+
+dependencies {
+    implementation project(":flight")
+    implementation project(":hotel")
+    implementation project(":flight-hotel")
+
+    implementation project(":core")
+}

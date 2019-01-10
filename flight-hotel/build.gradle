@@ -1,0 +1,14 @@
+apply plugin: 'com.android.library'
+
+apply from: '../kotlin.gradle'
+apply from: '../default-module.gradle'
+apply from: '../lib-feature.gradle'
+
+dependencies {
+    implementation project(":flight-api")
+    implementation project(":hotel-api")
+
+    implementation project(":core")
+
+    implementation libraries.koinJava
+}
